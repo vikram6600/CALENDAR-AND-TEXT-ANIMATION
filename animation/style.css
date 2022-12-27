@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+width: 1500px;
+height: 350px;
+margin: 200px auto;
+background-color: rgb(151, 146, 146);
+border: 1px solid black;
+display: flex;
+}
+#box{
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid black;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(181, 170, 170);
+    padding-top: 25px;
+    font-weight: bolder;
+    align-content: center;
+}
+
+.box1 div::after{
+    content: 'LIFESTYLE';
+    background-color: lightgreen;
+    color: #fff;
+    
+    animation: text 10s infinite;
+}
+
+.box2 div::after{
+    content: 'WORK';
+    background-color: lightskyblue;
+    color: #fff;
+    animation: text 10s infinite;
+}
+
+.box3 div::after{
+    content: 'EVERYTHING';
+    background-color: red;
+    color: #fff;
+    animation: text 15s infinite;
+}
+
+@keyframes text{
+    30%{
+        content:'WORK' ;
+        background-color: lightskyblue;
+    }
+    50%{
+        content: 'EVERYTHING';
+        background-color: red;
+    }
+    70%{
+        content: 'LIFESTYLE';
+        background-color: lightgreen;
+    }
+}
+span{
+    font-size: 50px;
+    position:absolute;
+    margin-top: 600px;
+}
